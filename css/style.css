@@ -10,7 +10,7 @@
     margin: 82px auto 0 auto;
     display: grid;
     grid-template-columns: repeat(4, 240px);
-    grid-template-rows: repeat(2, 260px);
+    grid-template-rows: repeat(2, minmax(260px, auto));
     grid-auto-rows: 260px;
     gap: 60px;
 }
@@ -29,4 +29,9 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
+}
+
+#fourth {
+    grid-column: 4;
+    grid-row: 1 / 3;
 }
